@@ -40,7 +40,7 @@ export function About() {
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+              src="/pic.jpeg"
               alt="Modern executive workspace with industrial planning"
               className="rounded-xl shadow-lg w-full h-auto"
             />

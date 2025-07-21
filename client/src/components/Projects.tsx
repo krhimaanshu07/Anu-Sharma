@@ -25,7 +25,7 @@ const projects: Project[] = [
     description: "Complete setup of blast furnace of 680 m³ and sinter plant of 140m² capacity spanning 50 acres",
     status: "Ongoing",
     details: "50 acres",
-    image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    image: "/blast.png"
   },
   {
     id: "2", 
@@ -35,7 +35,8 @@ const projects: Project[] = [
     description: "Manufacturing unit with annual capacity of 500,000 MT spanning 36 acres",
     status: "Ongoing",
     details: "36 acres",
-    image: "https://images.unsplash.com/photo-1558618666-fbcd25c0cd7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    image: "/image.jpeg"
+
   },
   {
     id: "3",
@@ -75,7 +76,7 @@ const projects: Project[] = [
     description: "Complete structural setup with 120,000 MT annual capacity including quality and storage units",
     status: "Completed",
     details: "120,000 MT/year",
-    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    image: "/seamles.png"
   }
 ];
 

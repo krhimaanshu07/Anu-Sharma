@@ -53,7 +53,7 @@ export function Hero() {
           {/* Professional executive portrait */}
           <motion.div className="mb-8" variants={fadeInUp}>
             <motion.img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+              src="/pic.jpeg"
               alt="Anu Sharma - Professional Executive"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-primary/30 dark:border-primary/50 shadow-2xl ring-4 ring-primary/20 dark:ring-primary/30"
               variants={glow}

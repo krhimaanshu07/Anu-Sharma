@@ -7,7 +7,7 @@ export function About() {
   const { ref, isIntersecting } = useIntersectionObserver();
 
   return (
-    <section id="about" className="py-20 bg-card/30" ref={ref}>
+    <section id="about" className="py-20 bg-gradient-to-b from-slate-50/50 to-blue-50/30 dark:bg-card/30" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
@@ -32,7 +32,7 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Professional workspace image */}
           <motion.div
-            className="glass-morphism rounded-2xl p-8 neumorphism"
+            className="glass-morphism rounded-2xl p-8 neumorphism shadow-xl border border-white/20 dark:border-white/10"
             variants={fadeInLeft}
             initial="hidden"
             animate={isIntersecting ? "visible" : "hidden"}
@@ -53,21 +53,21 @@ export function About() {
             animate={isIntersecting ? "visible" : "hidden"}
           >
             <motion.div
-              className="glass-morphism rounded-2xl p-6 neumorphism"
+              className="glass-morphism rounded-2xl p-6 neumorphism shadow-lg border border-white/20 dark:border-white/10"
               variants={fadeInRight}
             >
               <h3 className="text-2xl font-bold mb-4 text-primary">Professional Excellence</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground/90 dark:text-muted-foreground leading-relaxed">
                 Currently serving as President at Rashmi Metaliks, I steer corporate strategy, operations, and overall performance. 
                 Known for visionary leadership, strategic acumen, and commitment to achieving outstanding outcomes across multiple industrial sectors.
               </p>
             </motion.div>
 
             <motion.div
-              className="glass-morphism rounded-2xl p-6 neumorphism"
+              className="glass-morphism rounded-2xl p-6 neumorphism shadow-lg border border-white/20 dark:border-white/10"
               variants={fadeInRight}
             >
-              <h3 className="text-2xl font-bold mb-4 text-violet-400">Core Expertise</h3>
+              <h3 className="text-2xl font-bold mb-4 text-violet-500 dark:text-violet-400">Core Expertise</h3>
               <div className="grid grid-cols-2 gap-3 text-sm">
                 {[
                   "Strategic Planning",
@@ -79,12 +79,12 @@ export function About() {
                 ].map((skill, index) => (
                   <motion.div
                     key={skill}
-                    className="flex items-center"
+                    className="flex items-center text-foreground/90 dark:text-foreground"
                     initial={{ opacity: 0, x: -20 }}
                     animate={isIntersecting ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                     transition={{ delay: index * 0.1 }}
                   >
-                    <Check className="h-4 w-4 text-green-400 mr-2" />
+                    <Check className="h-4 w-4 text-green-500 dark:text-green-400 mr-2" />
                     {skill}
                   </motion.div>
                 ))}
@@ -92,11 +92,11 @@ export function About() {
             </motion.div>
 
             <motion.div
-              className="glass-morphism rounded-2xl p-6 neumorphism"
+              className="glass-morphism rounded-2xl p-6 neumorphism shadow-lg border border-white/20 dark:border-white/10"
               variants={fadeInRight}
             >
-              <h3 className="text-2xl font-bold mb-4 text-cyan-400">Location & Contact</h3>
-              <div className="space-y-2 text-muted-foreground">
+              <h3 className="text-2xl font-bold mb-4 text-cyan-600 dark:text-cyan-400">Location & Contact</h3>
+              <div className="space-y-2 text-muted-foreground/90 dark:text-muted-foreground">
                 <p className="flex items-center">
                   <MapPin className="h-4 w-4 text-primary mr-2" />
                   Kharagpur, West Bengal, India

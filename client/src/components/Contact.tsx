@@ -69,7 +69,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-card/30" ref={ref}>
+    <section id="contact" className="py-20 bg-gradient-to-b from-indigo-50/40 to-slate-100/50 dark:bg-card/30" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
@@ -99,7 +99,7 @@ export function Contact() {
             initial="hidden"
             animate={isIntersecting ? "visible" : "hidden"}
           >
-            <div className="glass-morphism rounded-2xl p-8 neumorphism">
+            <div className="glass-morphism rounded-2xl p-8 neumorphism shadow-xl border border-white/20 dark:border-white/10">
               <h3 className="text-2xl font-bold mb-6 text-primary">Contact Information</h3>
               
               <div className="space-y-6">
@@ -156,7 +156,7 @@ export function Contact() {
 
             {/* Business Hours */}
             <motion.div
-              className="glass-morphism rounded-2xl p-6 neumorphism"
+              className="glass-morphism rounded-2xl p-6 neumorphism shadow-lg border border-white/20 dark:border-white/10"
               variants={fadeInLeft}
               transition={{ delay: 0.2 }}
             >
@@ -183,7 +183,7 @@ export function Contact() {
 
           {/* Contact Form */}
           <motion.div
-            className="glass-morphism rounded-2xl p-8 neumorphism"
+            className="glass-morphism rounded-2xl p-8 neumorphism shadow-xl border border-white/20 dark:border-white/10"
             variants={fadeInRight}
             initial="hidden"
             animate={isIntersecting ? "visible" : "hidden"}

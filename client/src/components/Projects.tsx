@@ -108,7 +108,7 @@ export function Projects() {
   };
 
   return (
-    <section id="projects" className="py-20 bg-card/30" ref={ref}>
+    <section id="projects" className="py-20 bg-gradient-to-b from-blue-50/30 to-indigo-50/40 dark:bg-card/30" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
@@ -164,7 +164,7 @@ export function Projects() {
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
-              className="glass-morphism rounded-2xl p-6 neumorphism group cursor-pointer"
+              className="glass-morphism rounded-2xl p-6 neumorphism group cursor-pointer shadow-lg border border-white/20 dark:border-white/10"
               variants={fadeInUp}
               transition={{ delay: index * 0.1 }}
               whileHover="hover"

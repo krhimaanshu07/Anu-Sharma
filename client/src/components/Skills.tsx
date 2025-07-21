@@ -99,7 +99,7 @@ export function Skills() {
             return (
               <motion.div
                 key={skill.title}
-                className="glass-morphism rounded-2xl p-6 neumorphism group"
+                className="glass-morphism rounded-2xl p-6 neumorphism group shadow-lg border border-white/20 dark:border-white/10"
                 variants={fadeInUp}
                 initial="hidden"
                 animate={isIntersecting ? "visible" : "hidden"}

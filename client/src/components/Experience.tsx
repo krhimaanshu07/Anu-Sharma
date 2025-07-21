@@ -111,7 +111,7 @@ export function Experience() {
           {experiences.map((experience, index) => (
             <motion.div
               key={experience.id}
-              className="glass-morphism rounded-2xl p-8 neumorphism"
+              className="glass-morphism rounded-2xl p-8 neumorphism shadow-xl border border-white/20 dark:border-white/10"
               variants={fadeInLeft}
               initial="hidden"
               animate={isIntersecting ? "visible" : "hidden"}

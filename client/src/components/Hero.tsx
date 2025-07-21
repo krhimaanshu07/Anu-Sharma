@@ -17,26 +17,26 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden parallax-bg"
-      style={{
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')`,
-      }}
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
+      {/* Dynamic Background with Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-100/30 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900" />
+      
       {/* Floating geometric shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full"
+          className="absolute top-20 left-10 w-32 h-32 bg-primary/10 dark:bg-primary/20 rounded-full blur-sm"
           variants={float}
           animate="animate"
         />
         <motion.div
-          className="absolute top-40 right-20 w-24 h-24 bg-violet-500/20 rounded-full"
+          className="absolute top-40 right-20 w-24 h-24 bg-violet-500/10 dark:bg-violet-500/20 rounded-full blur-sm"
           variants={float}
           animate="animate"
           transition={{ delay: 2 }}
         />
         <motion.div
-          className="absolute bottom-20 left-1/4 w-20 h-20 bg-cyan-500/20 rounded-full"
+          className="absolute bottom-20 left-1/4 w-20 h-20 bg-cyan-500/10 dark:bg-cyan-500/20 rounded-full blur-sm"
           variants={float}
           animate="animate"
           transition={{ delay: 4 }}
@@ -49,13 +49,13 @@ export function Hero() {
         initial="hidden"
         animate="visible"
       >
-        <div className="glass-morphism rounded-3xl p-8 md:p-16 neumorphism">
+        <div className="glass-morphism rounded-3xl p-8 md:p-16 neumorphism shadow-2xl border border-white/20 dark:border-white/10">
           {/* Professional executive portrait */}
           <motion.div className="mb-8" variants={fadeInUp}>
             <motion.img
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
               alt="Anu Sharma - Professional Executive"
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-primary/50 shadow-lg"
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-primary/30 dark:border-primary/50 shadow-2xl ring-4 ring-primary/20 dark:ring-primary/30"
               variants={glow}
               animate="animate"
             />
@@ -76,7 +76,7 @@ export function Hero() {
           </motion.h2>
 
           <motion.p
-            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-muted-foreground/80 dark:text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
             Driving business growth and operational excellence across manufacturing, construction, and industrial sectors with strategic vision and proven leadership.
@@ -94,7 +94,7 @@ export function Hero() {
             </Button>
             <Button
               variant="outline"
-              className="px-8 py-3 glass-morphism hover:bg-white/20 transition-all duration-300"
+              className="px-8 py-3 glass-morphism hover:bg-white/30 dark:hover:bg-white/20 border-primary/20 dark:border-primary/30 text-foreground transition-all duration-300"
             >
               <Download className="mr-2 h-4 w-4" />
               Download Resume
